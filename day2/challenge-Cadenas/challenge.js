@@ -30,12 +30,10 @@ for(let i = 0; i<=9; i++){
     for(let j = 0; j<=9; j++){
         for(let k=0; k<=9; k++){
             attentative = i * 100 + j *10 + k;
+            essais++;
             if(attentative == codeSecret){
                 isFound = true;   
                 break;
-            }
-            else{
-                essais++;
             }
         }
         if(isFound){

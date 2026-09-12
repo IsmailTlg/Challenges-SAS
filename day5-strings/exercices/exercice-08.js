@@ -15,3 +15,11 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function capitaliser(mot){
+    mot = mot.toLowerCase();
+    mot = mot.split("");  //convert to array since strings are immutable
+    mot[0] = mot[0].toUpperCase();
+    mot = mot.join("");
+    return mot;
+}
+console.log(capitaliser("bOuNjOUr"));

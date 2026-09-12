@@ -15,3 +15,19 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function Checkemail(email){
+    let isExist = false;
+    for(let i = 0; i < email.length; i++){
+        if(email[i] == "@"){
+            isExist = true;
+        }
+    }
+    if(isExist){
+        console.log("cette email contient @");
+    }
+    else {
+        console.log("contient pas @");
+    }
+}
+Checkemail("ismail@gmail.com")
+Checkemail("ismailgmail.com")

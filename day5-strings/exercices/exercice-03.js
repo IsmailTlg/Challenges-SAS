@@ -15,3 +15,9 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let mot1 = "youcode";
+let mot2 = "MAROC";
+mot1 = mot1.toUpperCase();
+mot2 = mot2.toLowerCase();
+console.log(mot1);
+console.log(mot2);

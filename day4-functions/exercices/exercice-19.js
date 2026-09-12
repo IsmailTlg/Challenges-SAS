@@ -5,7 +5,8 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Bien que ce ne soit pas spécifique au DOM, utilisez la fonction native setTimeout(callback, delai) pour créer une fonction alarme(message, secondes) qui affichera le message après X secondes.
+ * Bien que ce ne soit pas spécifique au DOM,
+ * utilisez la fonction native setTimeout(callback, delai) pour créer une fonction alarme(message, secondes) qui affichera le message après X secondes.
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-19
  * ▶️ Commande : node day03/exercices/exercice-19.js
@@ -15,8 +16,10 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-function alarm(message, secondes){
-    message = `${secondes} secondes a passer!`;
-    return message;
+function alarme(message, secondes){
+    setTimeout(() => {
+        console.log(message)
+    }, secondes * 1000);
 }
-setTimeout(alarm, alarm())
+console.log("message afficher apres 5 secondes.");
+alarme("Bonjour", 5);

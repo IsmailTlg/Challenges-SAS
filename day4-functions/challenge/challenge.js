@@ -22,3 +22,33 @@
 
 // Découpe d'abord le problème en petites étapes.
 // TODO: écris ta solution ici.
+function systemDeJeux(){    
+    let or = 0; 
+    function ajouterOr(montant){
+        or += montant;
+        console.log(`Vous avez ramassé ${montant} or. Total: ${or}`);
+    }
+    function depenserOr(montant){
+        if(or >= montant){
+            or -= montant;
+            console.log(`achat de ${montant} a effictue, nouveau montant d'or: ${or}`);
+        }
+        else{
+            console.log("fonds inssufisant!");
+        }
+    }
+    function combatGagne(){
+        let aleatoire = Math.floor(Math.random() * (50-10+1)) + 10;
+        ajouterOr(aleatoire);
+    }
+    return {
+        ajouterOr,
+        depenserOr,
+        combatGagne
+    }
+}
+let inventaire = systemDeJeux()
+inventaire.combatGagne();
+inventaire.combatGagne();
+inventaire.combatGagne();
+inventaire.depenserOr(100);

@@ -17,7 +17,7 @@
 // TODO: écris ta solution ici.
 function creerCompteur(){
     let count = 0;
-    return function(addition){
+    return function(){
         count++;
         return count;
     }
@@ -25,4 +25,4 @@ function creerCompteur(){
 let monCompteur = creerCompteur();
 console.log(monCompteur())
 console.log(monCompteur())
-console.log(monCompteur())
+console.log(monCompteur())  /// On Observe que la valeur de compteur conserve

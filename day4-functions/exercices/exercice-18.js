@@ -22,4 +22,4 @@ function multiplicateur(facteur) {
     }
 }
 const double = multiplicateur(2);
-console.log(double(10))
+console.log(double(10)) 

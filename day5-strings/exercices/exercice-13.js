@@ -15,3 +15,10 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function formater(montant){
+    montant = String(montant)
+    montant = montant.replace(/\B(?=(\d{3})+(?!\d))/g, " ");   //regex form pour les montants
+    return `${montant} MAD`;
+}
+let number = 1234567;
+console.log(formater(number));

@@ -24,3 +24,21 @@
 
 // Découpe d'abord le problème en petites étapes.
 // TODO: écris ta solution ici.
+function filtrerMessage(message){
+    let mots = ["noob", "idiot", "nul"];
+    message = message.split(" ");
+    console.log(message)
+    for(let i = 0; i<message.length; i++){
+        if(mots.includes(message[i].toLowerCase())){
+            let itoiles = "";
+            for(let j = 0; j<message[i].length; j++){
+                itoiles +="*"
+            }
+            message[i] = "";
+            message[i] += itoiles;
+        }
+    }
+    message = message.join(" ")
+    return message;
+}
+console.log(filtrerMessage("BONJOUR nooB idIOt IDIot idiot nUl CV ?"));

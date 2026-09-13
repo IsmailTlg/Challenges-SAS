@@ -16,3 +16,12 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let phrase = "Hyper   Text Markup Language";
+phrase = phrase.split(" ");
+let letters = [];
+console.log(phrase)
+for(let i = 0; i<phrase.length; i++){
+    letters.push(phrase[i][0])
+}
+letters = letters.join("")
+console.log(letters);

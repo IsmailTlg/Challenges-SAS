@@ -15,3 +15,11 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let forme = /^\d{4,5}-[A-Z]{1,2}-\d{1,2}$/
+let plaque = "12235-A-36";
+if(forme.test(plaque)){
+    console.log("la matricul est verifie !")
+}
+else{
+    console.log("la matricule est pas verifie")
+}

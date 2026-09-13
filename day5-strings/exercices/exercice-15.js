@@ -16,3 +16,24 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let word1 = "chien"
+let word2 = "niche"
+let sameLetters = true;
+for(let i = 0; i<word1.length; i++){
+    if(!word2.includes(word1[i])){
+        sameLetters = false;
+        break;
+    }
+}
+for(let i = 0; i<word2.length; i++){
+    if(!word1.includes(word2[i])){
+        sameLetters = false;
+        break;
+    }
+}
+if(sameLetters && word1.length == word2.length){
+    console.log("les deux mots sont anagrammes")
+}
+else{
+    console.log("les mots sont pas anagrammes");
+}

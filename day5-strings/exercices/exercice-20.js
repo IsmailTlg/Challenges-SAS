@@ -17,3 +17,18 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let title = "Les 10 secrets de JavaScript !";
+let ponctuation = ".,;:!?'-\"()[]{}"
+title = title.toLowerCase();
+title = title.split("");
+for(let i = 0; i<title.length; i++){
+    if(ponctuation.includes(title[i])){
+        title.splice(i, 1);
+        i--;
+    }
+    
+}
+title = title.join("")
+title = title.trim()
+title = title.replaceAll(" ", "-")
+console.log(title)

@@ -15,3 +15,15 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let phrase = "Bonjour le monde";
+phrase = phrase.split(" ");
+let temp;
+let k = phrase.length-1;
+for(let i = 0; i<phrase.length/2; i++){
+    temp = phrase[i];
+    phrase[i] = phrase[k];
+    phrase[k] = temp;
+    k--;
+}
+phrase = phrase.join(" ");
+console.log(phrase)
